@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maharana Pratap BCA</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #2e86c1;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        /* Options Row Styling */
+        .options-row {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .option-card {
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .option-card h2 {
+            color: #2e86c1;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .option-card:hover {
+            transform: scale(1.05);
+            background-color: #e8f1fb;
+        }
+
+        /* Photo Row Styling */
+        .photo-row {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .photo-row img {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Gallery Styling */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+            align-items: center;
+        }
+
+        .photo-item {
+            text-align: center;
+        }
+
+        .photo-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .photo-caption {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Additional row styling */
+        .extra-options-row {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        /* Footer Content Styling */
+        .footer-content p {
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        /* Responsive Design for Mobile */
+        @media (max-width: 768px) {
+
+            /* Stack the photo row images vertically */
+            .photo-row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            /* Adjust the width of the option cards for smaller screens */
+            .option-card {
+                width: 80%;
+                /* Full width for mobile */
+                margin-bottom: 20px;
+            }
+
+            /* Stack the options row vertically on smaller screens */
+            .options-row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            /* Adjust gallery items to be more compact */
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .photo-image {
+                width: 100%;
+                /* Image takes full width of its container */
+                height: auto;
+                /* Maintain aspect ratio */
+            }
+
+            /* Adjust footer content */
+            footer {
+                padding: 10px 0;
+            }
+
+            .footer-content p {
+                font-size: 0.9rem;
+                /* Slightly smaller font size for mobile */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Maharana Pratap Jungle Dusan, Gorkhpur</h1>
+        <h2>BCA 1st Semester Student Information</h2>
+    </header>
+
+    <!-- Photo Row Section -->
+    <div class="photo-row">
+        <div class="photo-item">
+            <img src="DIGVIJAYNATH.jpg" alt="Photo 2">
+            <p class="photo-caption">ब्रह्मलीन महन्त दिग्विजयनाथ जी महाराज</p>
+            <p class="photo-post">Position: Founder of MSP school</p>
+        </div>
+        <div class="photo-item">
+            <img src="baba.jpg" alt="Photo 1">
+            <p class="photo-caption">ब्रह्मलीन महन्त अवेद्यनाथ जी महाराज</p>
+            <p class="photo-post">Position: Founder of College</p>
+        </div>
+        <div class="photo-item">
+            <img src="yogi-adityanath.jpg" alt="Photo 3">
+            <p class="photo-caption">Yogi Adityanath Ji Maharaj</p>
+            <p class="photo-post">Position: Manager and CM of UP</p>
+        </div>
+        <div class="photo-item">
+            <img src="principal.jpg" alt="Photo 4">
+            <p class="photo-caption">Dr. Pradeep Rao</p>
+            <p class="photo-post">Position: Principal of College</p>
+        </div>
+    </div>
+
+    <!-- Faculty Section -->
+    <div class="options-row">
+        <div class="option-card">
+            <h2>Faculty Teachers</h2>
+            <div class="gallery">
+                <div class="photo-item">
+                    <img src="sirimage.jpeg" alt="Teacher 1" class="photo-image">
+                    <p class="photo-caption">Bharat Kumar</p>
+                    <p>English Faculty Teacher</p>
+                </div>
+                <div class="photo-item">
+                    <img src="empty.jpg" alt="Teacher 2" class="photo-image">
+                    <p class="photo-caption">Priyanshu srivashtva sir</p>
+                    <p> Programming Faculty Teacher</p>
+                </div>
+                <div class="photo-item">
+                    <img src="empty.jpg" alt="Teacher 3" class="photo-image">
+                    <p class="photo-caption"> Anil mourya sir</p>
+                    <p>math Faculty Teacher</p>
+                </div>
+                <div class="photo-item">
+                    <img src="m.png" alt="Teacher 3" class="photo-image">
+                    <p class="photo-caption"> Shruti shahi ma'am</p>
+                    <p>IT tool and apllication Faculty Teacher</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Sections Row -->
+    <div class="extra-options-row">
+        <div class="option-card">
+            <h2>Syllabus</h2>
+            <p>View and manage the syllabus information.</p>
+            <p><a href="https://mpm.ac.in/Hindi/Syllabus.aspx" target="_blank">Download Syllabus</a></p>
+        </div>
+        <div class="option-card">
+            <h2>Student Info</h2>
+            <p>Access student details and records.</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>Kartik Singh Junior| Address: Rampur,kushinagar , Gorkhpur,UP | Email: kartiksinghjunior1@gmail.com |
+                Mobile: 9696444893</p>
+            <p>&copy; 2024 kartiksinghjunior1</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
